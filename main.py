@@ -28,7 +28,7 @@ class Example(QWidget, Ui_Form):
         if self.f:
             qp = QPainter()
             qp.begin(self)
-            qp.setBrush(QBrush(QColor(255, 255, 0)))
+            qp.setBrush(QBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))))
             self.new_circle(qp)
             qp.end()
             self.f = False
